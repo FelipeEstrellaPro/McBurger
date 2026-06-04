@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>McBurger – Las Mejores Hamburguesas de la Ciudad</title>
+  <meta name="description" content="McBurger, el destino definitivo para los amantes de las hamburguesas gourmet. Ingredientes frescos, sabores únicos y una experiencia gastronómica inigualable." />
+  <meta name="keywords" content="hamburguesas, McBurger, comida rápida gourmet, smash burger, mejor hamburguesa" />
+  <meta property="og:title" content="McBurger – Las Mejores Hamburguesas de la Ciudad" />
+  <meta property="og:description" content="Hamburguesas gourmet crafteadas con los mejores ingredientes. Ven y vívelo." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- ═══════════════════════════
+       NAVBAR
+  ════════════════════════════ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="nav-logo">
+      <div class="logo-icon" aria-hidden="true">🍔</div>
+      <span class="logo-text">Mc<span>Burger</span></span>
+    </div>
+    <ul class="nav-links" role="list">
+      <li><a href="#menu" id="nav-menu">Menú</a></li>
+      <li><a href="#nosotros" id="nav-about">Nosotros</a></li>
+      <li><a href="#ofertas" id="nav-offers">Ofertas</a></li>
+      <li><a href="#contacto" id="nav-contact">Contacto</a></li>
+    </ul>
+    <a href="#menu" class="btn btn-primary nav-order-btn" id="nav-order-cta">
+      <span>🛒 Ordenar Ahora</span>
+    </a>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════
+         HERO
+    ════════════════════════════ -->
+    <section class="hero container" id="inicio" aria-label="Sección principal">
+
+      <div class="hero-content">
+        <div class="hero-badge" aria-label="Estado del negocio">
+          <span class="badge-dot" aria-hidden="true"></span>
+          Abierto · Lun–Dom 11am–11pm
+        </div>
+
+        <h1 class="hero-title">
+          El Sabor que<br/>
+          <span class="gradient-text">Nunca Olvidarás</span>
+        </h1>
+
+        <p class="hero-desc">
+          Hamburguesas gourmet crafteadas a mano con ingredientes 100% frescos.
+          Cada mordida es una explosión de sabor diseñada para hacerte volver.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#menu" class="btn btn-primary" id="hero-menu-btn">
+            <span>Ver el Menú →</span>
+          </a>
+          <a href="#nosotros" class="btn btn-outline" id="hero-about-btn">
+            Nuestra Historia
+          </a>
+        </div>
+
+        <div class="hero-stats" role="list" aria-label="Estadísticas">
+          <div class="stat-item" role="listitem">
+            <span class="stat-number">50<span>+</span></span>
+            <span class="stat-label">Años de sabor</span>
+          </div>
+          <div class="stat-item" role="listitem">
+            <span class="stat-number">200<span>k</span></span>
+            <span class="stat-label">Clientes felices</span>
+          </div>
+          <div class="stat-item" role="listitem">
+            <span class="stat-number">4.9<span>★</span></span>
+            <span class="stat-label">Calificación</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap" aria-hidden="true">
+        <div class="hero-glow-ring"></div>
+        <div class="hero-glow-ring hero-glow-ring-2"></div>
+        <img
+          src="hero_burger.png"
+          alt="Hamburguesa gourmet McBurger"
+          class="hero-img"
+          loading="eager"
+        />
+
+        <div class="hero-float-badge badge-left">
+          <span class="float-badge-icon">🔥</span>
+          <div class="float-badge-text">
+            <strong>Recién Hecha</strong>
+            <small>Siempre fresca</small>
+          </div>
+        </div>
+
+        <div class="hero-float-badge badge-top">
+          <span class="float-badge-icon">⭐</span>
+          <div class="float-badge-text">
+            <strong>#1 en la Ciudad</strong>
+            <small>5 años seguidos</small>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════
+         FEATURES STRIP
+    ════════════════════════════ -->
+    <div class="features-strip" aria-label="Nuestras características">
+      <div class="container">
+        <div class="feature-chip">
+          <span class="chip-icon">🥩</span> Carne 100% Fresca
+        </div>
+        <div class="strip-divider" aria-hidden="true"></div>
+        <div class="feature-chip">
+          <span class="chip-icon">🌿</span> Ingredientes Naturales
+        </div>
+        <div class="strip-divider" aria-hidden="true"></div>
+        <div class="feature-chip">
+          <span class="chip-icon">🚚</span> Delivery en 30 Min
+        </div>
+        <div class="strip-divider" aria-hidden="true"></div>
+        <div class="feature-chip">
+          <span class="chip-icon">👨‍🍳</span> Chefs Especializados
+        </div>
+        <div class="strip-divider" aria-hidden="true"></div>
+        <div class="feature-chip">
+          <span class="chip-icon">❤️</span> Hecho con Amor
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════
+         MENU
+    ════════════════════════════ -->
+    <section class="menu" id="menu" aria-label="Nuestro menú">
+      <div class="container">
+
+        <div class="menu-header">
+          <div class="menu-header-left reveal">
+            <div class="section-tag">🍔 Nuestro Menú</div>
+            <h2 class="section-title">Elige tu <span>Favorita</span></h2>
+          </div>
+          <div class="menu-filter reveal" role="group" aria-label="Filtrar menú">
+            <button class="filter-btn active" id="filter-all" aria-pressed="true">Todos</button>
+            <button class="filter-btn" id="filter-classic" aria-pressed="false">Clásicos</button>
+            <button class="filter-btn" id="filter-spicy" aria-pressed="false">Picantes</button>
+            <button class="filter-btn" id="filter-bbq" aria-pressed="false">BBQ</button>
+          </div>
+        </div>
+
+        <div class="menu-grid" role="list" aria-label="Hamburguesas disponibles">
+
+          <!-- Card 1: Classic -->
+          <article class="menu-card reveal" role="listitem" aria-label="McDouble Classic">
+            <div class="card-img-wrap">
+              <img src="burger_classic.png" alt="McDouble Classic – doble carne con queso americano" loading="lazy" />
+              <div class="card-img-overlay" aria-hidden="true"></div>
+              <span class="card-badge badge-popular" aria-label="Popular">🔥 Popular</span>
+              <div class="card-rating" aria-label="Calificación 4.9">⭐ 4.9</div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">McDouble Classic</h3>
+              <p class="card-desc">Doble carne de res, queso americano derretido, pepinillos crujientes, cebolla y salsa especial de la casa.</p>
+              <div class="card-footer">
+                <div class="card-price">
+                  <sup>$</sup>12<small>.99</small>
+                </div>
+                <button class="card-add-btn" id="add-classic" aria-label="Agregar McDouble Classic al carrito">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Spicy -->
+          <article class="menu-card reveal" role="listitem" aria-label="Inferno Burger">
+            <div class="card-img-wrap">
+              <img src="burger_spicy.png" alt="Inferno Burger – picante con jalapeños y tocino crujiente" loading="lazy" />
+              <div class="card-img-overlay" aria-hidden="true"></div>
+              <span class="card-badge badge-spicy" aria-label="Picante">🌶️ Picante</span>
+              <div class="card-rating" aria-label="Calificación 4.8">⭐ 4.8</div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Inferno Burger</h3>
+              <p class="card-desc">Jalapeños frescos, tocino crujiente, queso pepper jack, salsa sriracha y aros de cebolla en pan carbón.</p>
+              <div class="card-footer">
+                <div class="card-price">
+                  <sup>$</sup>14<small>.99</small>
+                </div>
+                <button class="card-add-btn" id="add-inferno" aria-label="Agregar Inferno Burger al carrito">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: BBQ -->
+          <article class="menu-card reveal" role="listitem" aria-label="Smoky BBQ Ranch">
+            <div class="card-img-wrap">
+              <img src="burger_bbq.png" alt="Smoky BBQ Ranch – carne ahumada con pulled pork y tocino" loading="lazy" />
+              <div class="card-img-overlay" aria-hidden="true"></div>
+              <span class="card-badge badge-new" aria-label="Nuevo">✨ Nuevo</span>
+              <div class="card-rating" aria-label="Calificación 5.0">⭐ 5.0</div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Smoky BBQ Ranch</h3>
+              <p class="card-desc">Pulled pork ahumado, tocino artesanal, cebolla caramelizada, ensalada de col y salsa BBQ premium.</p>
+              <div class="card-footer">
+                <div class="card-price">
+                  <sup>$</sup>16<small>.99</small>
+                </div>
+                <button class="card-add-btn" id="add-bbq" aria-label="Agregar Smoky BBQ Ranch al carrito">+</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+         ABOUT
+    ════════════════════════════ -->
+    <section class="about" id="nosotros" aria-label="Sobre McBurger">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-img-col reveal" aria-hidden="true">
+            <img src="hero_burger.png" alt="Hamburguesa McBurger de cerca" class="about-img-main" loading="lazy" />
+            <img src="burger_classic.png" alt="McDouble Classic" class="about-img-accent" loading="lazy" />
+            <div class="about-exp-badge" aria-label="Más de 50 años de experiencia">
+              <div class="exp-num">50+</div>
+              <div class="exp-label">Años de<br/>Experiencia</div>
+            </div>
+          </div>
+
+          <div class="about-text reveal">
+            <div class="section-tag">🏆 Nuestra Historia</div>
+            <h2 class="section-title">Pasión por la <span>Perfecta</span> Hamburguesa</h2>
+            <p class="section-desc" style="margin-top:16px">
+              Desde 1974, McBurger ha sido sinónimo de calidad, sabor y tradición. Comenzamos como
+              un pequeño local familiar y hoy somos referente gastronómico en toda la ciudad.
+            </p>
+
+            <ul class="about-list" aria-label="Nuestros valores">
+              <li>
+                <span class="list-icon" aria-hidden="true">✓</span>
+                <span>Utilizamos carne de res fresca, molida a diario, sin conservantes ni rellenos artificiales.</span>
+              </li>
+              <li>
+                <span class="list-icon" aria-hidden="true">✓</span>
+                <span>Nuestros panes artesanales se hornean cada mañana en nuestra panadería propia.</span>
+              </li>
+              <li>
+                <span class="list-icon" aria-hidden="true">✓</span>
+                <span>Trabajamos con productores locales comprometidos con la agricultura sostenible.</span>
+              </li>
+              <li>
+                <span class="list-icon" aria-hidden="true">✓</span>
+                <span>Cada receta es supervisada por nuestros chefs con más de 20 años de experiencia.</span>
+              </li>
+            </ul>
+
+            <a href="#menu" class="btn btn-primary" id="about-menu-btn">
+              <span>Explorar el Menú →</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+         PROMO BANNER
+    ════════════════════════════ -->
+    <section class="promo-banner" id="ofertas" aria-label="Oferta especial">
+      <div class="container">
+        <div class="promo-inner reveal">
+          <div class="promo-text">
+            <span class="promo-label">⚡ Oferta Limitada</span>
+            <h2 class="promo-title">30% OFF en tu<br/>Primera Orden</h2>
+            <p class="promo-sub">Válido solo esta semana. ¡No lo dejes pasar!</p>
+          </div>
+          <div class="promo-code-wrap">
+            <p class="promo-code-label">Usa el código</p>
+            <span class="promo-code" id="promo-code-display">MC30OFF</span>
+            <a href="#menu" class="btn-promo" id="promo-order-btn">Ordenar Ahora →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+         TESTIMONIALS
+    ════════════════════════════ -->
+    <section class="testimonials" id="resenas" aria-label="Reseñas de clientes">
+      <div class="container">
+        <div class="testimonials-header reveal">
+          <div class="section-tag">💬 Reseñas</div>
+          <h2 class="section-title">Lo que Dicen <span>Nuestros Clientes</span></h2>
+          <p class="section-desc" style="margin-top:12px">
+            Miles de personas ya han descubierto el sabor McBurger. Aquí sus historias.
+          </p>
+        </div>
+
+        <div class="reviews-grid" role="list" aria-label="Reseñas de clientes">
+
+          <article class="review-card reveal" role="listitem">
+            <div class="review-stars" aria-label="5 estrellas">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              <span class="star">★</span><span class="star">★</span>
+            </div>
+            <p class="review-text">"Honestamente la mejor hamburguesa que he probado en mi vida. La carne es increíblemente jugosa y el pan artesanal lo eleva a otro nivel."</p>
+            <div class="review-author">
+              <div class="author-avatar" aria-hidden="true">CM</div>
+              <div class="author-info">
+                <div class="author-name">Carlos Mendoza</div>
+                <div class="author-location">📍 Ciudad de México</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal" role="listitem">
+            <div class="review-stars" aria-label="5 estrellas">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              <span class="star">★</span><span class="star">★</span>
+            </div>
+            <p class="review-text">"El Inferno Burger me dejó sin palabras. Picante en su punto justo, con un equilibrio de sabores que no esperaba. Definitivamente volvería."</p>
+            <div class="review-author">
+              <div class="author-avatar" aria-hidden="true">SR</div>
+              <div class="author-info">
+                <div class="author-name">Sofía Ramírez</div>
+                <div class="author-location">📍 Guadalajara</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal" role="listitem">
+            <div class="review-stars" aria-label="5 estrellas">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              <span class="star">★</span><span class="star">★</span>
+            </div>
+            <p class="review-text">"El servicio es rápido, el lugar está limpio y la comida supera cualquier expectativa. Ya llevo 3 visitas esta semana, no puedo parar."</p>
+            <div class="review-author">
+              <div class="author-avatar" aria-hidden="true">AL</div>
+              <div class="author-info">
+                <div class="author-name">Andrés López</div>
+                <div class="author-location">📍 Monterrey</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+         CONTACT
+    ════════════════════════════ -->
+    <section class="contact" id="contacto" aria-label="Contacto y reservas">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-left reveal">
+            <div class="section-tag">📬 Contáctanos</div>
+            <h2 class="section-title">¿Tienes alguna <span>Pregunta?</span></h2>
+            <p class="section-desc" style="margin-top:12px">
+              Estamos aquí para atenderte. Escríbenos, llámanos o visítanos directamente.
+            </p>
+
+            <div class="contact-info-cards" role="list">
+              <div class="info-card" role="listitem">
+                <div class="info-icon" aria-hidden="true">📍</div>
+                <div class="info-text">
+                  <div class="info-label">Dirección</div>
+                  <div class="info-value">Av. Insurgentes Sur 1457, CDMX</div>
+                </div>
+              </div>
+              <div class="info-card" role="listitem">
+                <div class="info-icon" aria-hidden="true">📞</div>
+                <div class="info-text">
+                  <div class="info-label">Teléfono</div>
+                  <div class="info-value">+52 (55) 1234-5678</div>
+                </div>
+              </div>
+              <div class="info-card" role="listitem">
+                <div class="info-icon" aria-hidden="true">📧</div>
+                <div class="info-text">
+                  <div class="info-label">Email</div>
+                  <div class="info-value">hola@mcburger.mx</div>
+                </div>
+              </div>
+              <div class="info-card" role="listitem">
+                <div class="info-icon" aria-hidden="true">🕐</div>
+                <div class="info-text">
+                  <div class="info-label">Horario</div>
+                  <div class="info-value">Lunes a Domingo · 11:00 – 23:00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal">
+            <h3 class="form-title">Envíanos un Mensaje</h3>
+            <form class="contact-form" id="contact-form" action="#" method="post" novalidate aria-label="Formulario de contacto">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="contact-name">Nombre</label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    class="form-control"
+                    placeholder="Tu nombre"
+                    autocomplete="given-name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-email">Email</label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    class="form-control"
+                    placeholder="tu@email.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-subject">Asunto</label>
+                <input
+                  type="text"
+                  id="contact-subject"
+                  name="subject"
+                  class="form-control"
+                  placeholder="¿En qué te podemos ayudar?"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Mensaje</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  class="form-control"
+                  placeholder="Cuéntanos más..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-submit" id="contact-submit">
+                <span>Enviar Mensaje →</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer" role="contentinfo">
+        <div class="container">
+          <div class="footer-inner">
+            <div class="footer-brand">
+              <div class="logo-text">Mc<span>Burger</span></div>
+              <p class="footer-copy">© 2025 McBurger. Todos los derechos reservados.</p>
+            </div>
+            <nav class="footer-links" aria-label="Links del footer">
+              <a href="#menu" id="footer-menu">Menú</a>
+              <a href="#nosotros" id="footer-about">Nosotros</a>
+              <a href="#ofertas" id="footer-offers">Ofertas</a>
+              <a href="#contacto" id="footer-contact">Contacto</a>
+            </nav>
+            <div class="footer-social" aria-label="Redes sociales">
+              <a href="#" class="social-btn" id="social-instagram" aria-label="Instagram">📸</a>
+              <a href="#" class="social-btn" id="social-facebook" aria-label="Facebook">👍</a>
+              <a href="#" class="social-btn" id="social-tiktok" aria-label="TikTok">🎵</a>
+              <a href="#" class="social-btn" id="social-twitter" aria-label="Twitter/X">🐦</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════
+       JAVASCRIPT
+  ════════════════════════════ -->
+  <script>
+    /* ── Navbar scroll effect ── */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    }, { passive: true });
+
+    /* ── Scroll reveal ── */
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('revealed'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => observer.observe(el));
+
+    /* ── Filter buttons ── */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
+      });
+    });
+
+    /* ── Add to cart micro-feedback ── */
+    document.querySelectorAll('.card-add-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        this.textContent = '✓';
+        this.style.background = 'linear-gradient(135deg, #2ecc71, #27ae60)';
+        setTimeout(() => {
+          this.textContent = '+';
+          this.style.background = '';
+        }, 1200);
+      });
+    });
+
+    /* ── Promo code copy ── */
+    const promoCode = document.getElementById('promo-code-display');
+    if (promoCode) {
+      promoCode.style.cursor = 'pointer';
+      promoCode.title = 'Haz clic para copiar';
+      promoCode.addEventListener('click', () => {
+        navigator.clipboard.writeText('MC30OFF').then(() => {
+          const original = promoCode.textContent;
+          promoCode.textContent = '¡Copiado!';
+          setTimeout(() => { promoCode.textContent = original; }, 1500);
+        });
+      });
+    }
+
+    /* ── Contact form ── */
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const btn = document.getElementById('contact-submit');
+        btn.querySelector('span').textContent = '✓ Enviado';
+        btn.style.background = 'linear-gradient(135deg, #2ecc71, #27ae60)';
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Enviar Mensaje →';
+          btn.style.background = '';
+          contactForm.reset();
+        }, 2500);
+      });
+    }
+  </script>
+
+</body>
+</html>
